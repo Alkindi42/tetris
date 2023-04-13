@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tetris</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Open-source Tetris game developed in javascript on the yokoten blog." />
+  <link href="css/index.css" rel="stylesheet" />
+  <script src="js/main.ts" type="module"></script>
+</head>
+
+<body>
+  <main>
+    <div id="root">
+      <header>
+        <div>
+          <div>Next</div>
+          <canvas id="next-tetromino">Your browser does not support canvas</canvas>
+        </div>
+
+        <div>
+          <div>Score</div>
+          <span id="score">0</span>
+        </div>
+
+        <div>
+          <div>Level</div>
+          <span id="level">1</span>
+        </div>
+      </header>
+
+      <canvas id="board-game">Your browser does not support canvas</canvas>
+
+      <footer>
+        <!-- Game pad -->
+        <div id="gamepad">
+          <div>
+            <button aria-label="up" name="ArrowUp" type="button">
+              <img src="./assets/img/keyboard_arrow_up.svg" alt="up" />
+            </button>
+          </div>
+          <div class="center">
+            <button aria-label="left" name="ArrowLeft" type="button">
+              <img src="./assets/img/keyboard_arrow_left.svg?width=20" alt="left" />
+            </button>
+            <button aria-label="right" name="ArrowRight" type="button">
+              <img src="./assets/img/keyboard_arrow_right.svg?width=20" alt="right" />
+            </button>
+          </div>
+          <div>
+            <button aria-label="bottom" name="ArrowDown" type="button">
+              <img src="./assets/img/keyboard_arrow_down.svg?width=20" alt="bottom" />
+            </button>
+          </div>
+        </div>
+
+        <div class="setting-wrapper">
+          <div>
+            <button id="sound" class="setting">
+              <img src="./assets/img/volume-up.svg?width=20" alt="Activate volume" />
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+</body>
+
+</html>

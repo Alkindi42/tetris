@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "VT323";
+  src: url("../assets/VT323-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: VT323;
+  box-sizing: border-box;
+  background-color: #8c9ed1;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+div#root {
+  padding: 5px 0;
+}
+
+@media screen and (min-width: 400px) {
+  html,
+  body {
+    height: 100vh;
+    background-color: #262b39;
+  }
+
+  main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  div#root {
+    background-color: #8c9ed1;
+    border-radius: 8px;
+    border: 0.5px solid black;
+    box-shadow: 5px 3px 5px black;
+    padding: 10px 20px;
+  }
+}
+
+button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: VT323;
+  background-color: transparent;
+}
+
+/**
+ * Header.
+ */
+header {
+  color: white;
+  display: flex;
+  display: flex;
+  margin-bottom: 8px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+header > div {
+  background-color: #262b39;
+  border-radius: 5px;
+  flex-basis: 30%;
+  padding-top: 3px;
+}
+
+#score,
+#level {
+  font-size: 1.8em;
+}
+
+canvas#board-game {
+  border-radius: 8px;
+  background-color: #262b39;
+}
+
+/**
+ * Footer.
+ */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setting-wrapper {
+  /* border: 2px solid red; */
+  /* display: flex;
+  flex-direction: row;
+  align-items: center; */
+}
+
+.setting {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  background-color: #262b39;
+}
+
+.setting img {
+  width: 28px;
+  height: 28px;
+}
+
+div#gamepad {
+  width: 130px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+div#gamepad img {
+  width: 20px;
+  height: 20px;
+  color: white;
+  padding: 10px;
+  border-radius: 30%;
+  background-color: #262b39;
+}
+
+.center {
+  display: flex;
+  justify-content: space-between;
+}
