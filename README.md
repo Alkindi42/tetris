@@ -1,6 +1,6 @@
 # Tetris JavaScript Implementation
 
-This repository contains a JavaScript implementation of the classic game Tetris. It is accompanied by an article on my [blog](https://everloop.dev/create-the-tetris-game-in-js).
+This repository contains a JavaScript implementation of the classic game Tetris.
 
 ## About the Project
 
@@ -22,10 +22,11 @@ If you want more details you can read the article in my [blog](https://everloop.
 # Getting started
 
 ```shell
-$ npm install
+npm install
 ```
 
 Then, run the application.
+
 ```shell
 $ npm start
 Server running at http://localhost:1234

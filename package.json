@@ -8,7 +8,7 @@
     "build": "parcel build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Everloop",
+  "author": "Alkindi42",
   "license": "ISC",
   "dependencies": {
     "parcel": "^2.8.3"
